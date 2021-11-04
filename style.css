@@ -6,6 +6,7 @@
 body{
     overflow: hidden;
     z-index: 2;
+    background-image: linear-gradient(to right,#FF416C,#FF4B2B);
 
 }
 html{
@@ -36,8 +37,9 @@ html{
     border: none;
 }
 .nav-tabs .nav-link a{
-    color: rebeccapurple;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+
 }
 
 #myTab {
@@ -99,6 +101,9 @@ banner-text, h1 {
     font-family: 'Kaushan Script', cursive;
     color: #d306b8;
 }
+banner-text, h1:hover{
+    color: #000000;
+}
 
 banner-text, .rainbow-text {
     font-size: 18px;
@@ -114,7 +119,7 @@ banner-text, .rainbow-text {
 }
 
 .banner-btn, a {
-    font-size: 15px;
+    font-size: 17px;
     width: 120px;
     text-decoration: none;
     margin: 0 10px;
@@ -123,7 +128,6 @@ banner-text, .rainbow-text {
     /* background-color: #FECE00; */
     /* border: 1px solid #fff; */
 }
-
 .gradient-text {
     /* Fallback: Set a background color. */
     background-color: #e7ad19;
@@ -265,16 +269,23 @@ banner-text, .rainbow-text {
 .content1 {
     padding: 0px;
     z-index: 2;
+    color: white;
 
 }
+#imgv:hover{
+    transform: scale(1.1);
+}
+
 
 .imghistory, img {
     width: 105%;
     border-radius: 20px;
+    
 }
 #imgv {
     width: 95%;
     border-radius: 20px;
+    transition: .3s ease;
 }
 
 .imghistory {
