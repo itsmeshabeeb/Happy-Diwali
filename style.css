@@ -82,7 +82,7 @@ html{
 }
 
 #banner {
-    background: linear-gradient(rgba(250, 250, 247, 0), #6101014b), url(diwali.jpg);
+    background: linear-gradient(rgba(250, 250, 247, 0), #6101014b), url(images/img5.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
