@@ -431,3 +431,21 @@ banner-text, .rainbow-text {
 .area4{
     background-image: linear-gradient(to right,#FF416C,#FF4B2B);
 }
+@media(max-width:768px){
+    .nav-link2{
+        margin: 0;
+        padding: 2px;
+        display: flex;
+
+    }
+    .nav-item, .nav-link{
+        margin: 0;
+        padding: 2px;
+    }
+    .nav-item .nav-link a{
+        font-size: 75%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
