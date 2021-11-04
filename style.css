@@ -435,7 +435,6 @@ banner-text, .rainbow-text {
     .nav-link2{
         margin: 0;
         padding: 2px;
-        display: flex;
 
     }
     .nav-item, .nav-link{
