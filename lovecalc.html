@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url(maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+}
+</style>
+<body>
+    <form name="contact-form">
+
+        <div>
+            <label for="">Your Name:</label>
+            <input type="text" id="name1">
+        </div>
+        <div>
+            <label for="">partner Name:</label>
+            <input type="text" id="name2">
+        </div>
+    <div>
+        <button onclick="lovecalc()">Check Percentage</button>
+    </div>
+    <div>
+        <label for="">result</label>
+        <input type="text" id="result">
+    </div>
+    <div>
+        <button id="clear" onclick="cleardata()">Clear</button>
+    </div>
+</form>
+</body>
+<script>
+
+
+    function lovecalc() {
+        var lovedata = Math.random() * 100;
+        lovedata = Math.floor(lovedata);
+        name1 = document.getElementById('name1').value;
+        name2 = document.getElementById('name2').value;
+
+        if (name1 == '' && name2 !== '') {
+            window.alert('dont try to fool me....enter Your name');
+        }
+        else if (name2 == '' && name1 != '') {
+            window.alert('dont try to fool me....enter your partner name');
+        }
+        else {
+            document.getElementById('result').value = lovedata + '%';
+            console.log('worked');
+            // document.getElementById('name1').value = '';
+            // document.getElementById('name2').value = '';
+            document.contact - form.reset();
+        }
+    }
+    function cleardata() {
+        document.getElementById('name1').value = '';
+        document.getElementById('name2').value = '';
+        document.getElementById('result').value = '';
+        console.log('hai');
+    }
+</script>
+
+</html>
