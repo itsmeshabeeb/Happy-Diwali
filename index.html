@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
     <title>Aap Ka Diwali</title>
+    <link rel="icon" href="images/tittlelogo.png" type="image/icon type">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
@@ -63,21 +65,21 @@
                 <p class="rainbow-text">Your Planet needs you. Say no to Fireworks & Fumes & Celebrate An Eco-Friendly
                     Diwali.</p>
                 <div class="banner-btn">
-                    <button class="glow-on-hover"><a href="#">Explore</a></button>
+                    <button class="glow-on-hover"><a href="#history">Explore</a></button>
                     <!-- <a href="#">More</a> -->
                 </div>
             </div>
         </section>
-        <div class="area1">
+        <div class="area1" id="history">
             <section class="container" id="historyarea">
                 <div class="col-lg-6 col-xs-12" data-aos="zoom-in">
                     <h2>History</h2>
                 </div>
 
-                <div class="row" id="history">
+                <div class="row">
                     <div class="col-lg-6 col-xs-12" data-aos="flip-right" id="data1">
                         <div class="content1">
-                            <h3>
+                            <h3 id="">
                                 Diwali in History
                             </h3>
                             <br>
@@ -195,13 +197,17 @@
                             </p>
                         </div>
                     </div>
+                    <div id="celebrations">
+                        
+                    </div>
                 </div>
+                <br><br>
             </section>
         </div>
         <div class="area2">
             <section class="container" id="celebrations">
                 <div class="col-lg-6 col-xs-12" data-aos="fade-right">
-                    <h2>Diwali Celebrations</h2>
+                    <br><br><h2>Diwali Celebrations</h2>
                 </div>
                 <div class="row" id="history">
                     <div class="col-lg-6 col-xs-12" data-aos="flip-up">
@@ -222,8 +228,8 @@
                     </div>
                     <div class="col-lg-6 col-xs-12" data-aos="flip-up">
                         <div class="imghistory" >
-                            <img src="https://images.unsplash.com/photo-1605294574666-e81471719e17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1633368516165-f7b04d6428d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                                alt="" style="width: 95%;">
                         </div>
                     </div>
                 </div>
@@ -329,7 +335,7 @@
                     <div class="col-lg-6 col-xs-12" data-aos="fade-right">
                         <div class="imghistory" id="imgv">
                             <img src="https://images.unsplash.com/photo-1609540969455-ad5ea19be121?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
-                                alt=""><br><br><br>
+                                alt=""><br><div id="tradition"></div><br>
                         </div>
                     </div>
                 </div>
@@ -338,7 +344,7 @@
         <!-- Traditons and Customs -->
         <div class="area3">
             <section class="container" id="history">
-                <div class="col-lg-6 col-xs-12" id="tradition">
+                <div class="col-lg-6 col-xs-12" id="tradition" data-aos="zoom-in">
                     <h2 id="">Diwali Traditions & Customs</h2>
                 </div>
                 <div class="row" id="history">
@@ -451,10 +457,13 @@
                     </div>
                     <div class="col-lg-6 col-xs-12" data-aos="fade-right">
                         <div class="imghistory" id="imgv">
-                            <img src="https://images.unsplash.com/photo-1635186769388-b537282188b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-                                alt=""><br><br><br>
+                            <img src="https://images.unsplash.com/photo-1635186769388-b537282188b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt=""><br><br><br></div>
+                            
+                                
                         </div>
                     </div>
+                    <div  id="regional"></div>
+
                 </div>
                 <!-- <div class="line"></div> -->
 
@@ -464,7 +473,7 @@
         <!-- Regional Significance -->
         <div class="area4">
             <section class="container" id="history">
-                <div class="col-lg-6 col-xs-12" id="regional">
+                <div class="col-lg-6 col-xs-12" data-aos="fade-right" >
                     <h2>Regional Significance of Diwali</h2>
                 </div>
                 <div class="row" id="history">
@@ -655,12 +664,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            delay: 400
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -91,7 +91,7 @@ html{
 .banner-text {
     /* text-align: center; */
     color: #fff;
-    padding-top: 100px;
+    padding-top: 180px;
     /* padding-right: 500px; */
     padding-left: 80px;
 }
@@ -298,6 +298,7 @@ banner-text, .rainbow-text {
     font-family: 'Kaushan Script', cursive;
     color: #e7ad19;
     font-size: 50px;
+    padding: 0px;
 }
 
 /* footer style */
