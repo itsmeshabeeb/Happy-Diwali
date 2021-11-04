@@ -80,7 +80,7 @@ html{
 }
 
 #banner {
-    background: linear-gradient(rgba(250, 250, 247, 0), #6101014b), url(diwali.jpg);
+    background: linear-gradient(rgba(250, 250, 247, 0), #6101014b), url(/images/diwali.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -259,7 +259,7 @@ banner-text, .rainbow-text {
     margin: 20px auto;
 }
 #history {
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 .content1 {

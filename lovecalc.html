@@ -1,76 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-body{
-    padding: 0px;
-    margin: 0px;
+ <title></title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="calcstyle.css">
 
-    background-image: url(maxresdefault.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: fit-content;
-    width: 100%;
-}
+<style >
+ 
 </style>
+</head>
 <body>
-    <form name="contact-form">
 
-        <div>
-            <label for="">Your Name:</label>
-            <input type="text" id="name1">
-        </div>
-        <div>
-            <label for="">partner Name:</label>
-            <input type="text" id="name2">
-        </div>
-    <div>
-        <button onclick="lovecalc()">Check Percentage</button>
+<header >
+ 
+<div class="card w-50 m-auto text-center ">
+  <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
+  <div class="card-body">
+   <form class="form-inline w-75 m-auto">
+    <div class="form-group">
+     <input type="text" name="" class="form-control text-center" placeholder="Your Name" id="name" >
     </div>
-    <div>
-        <label for="">result</label>
-        <input type="text" id="result">
+    <div class="pl-4 pr-4">
+     <span> + </span>
     </div>
-    <div>
-        <button id="clear" onclick="cleardata()">Clear</button>
+    <div class="form-group">
+     <input type="text" name="" class="form-control text-center" placeholder=" Love Name" id="lname">
     </div>
-</form>
-</body>
+   </form> <br>
+    <div class="w-70 m-auto">
+     <button  class="btn btn-success w-50" onclick="checkloveper()"> click </button>
+    </div>
+    <br>
+    <div>
+     <input type="text" name="" placeholder="LOVE PERCENTAGE" class="form-control text-center w-25 m-auto" id="lovevalue">
+    </div>
+  </div> 
+  <div class="card-footer ">God Bless Your RelationShip</div>
+</div>
+
+</header>
+
 <script>
-
-
-    function lovecalc() {
-        var lovedata = Math.random() * 100;
-        lovedata = Math.floor(lovedata);
-        name1 = document.getElementById('name1').value;
-        name2 = document.getElementById('name2').value;
-
-        if (name1 == '' && name2 !== '') {
-            window.alert('dont try to fool me....enter Your name');
-        }
-        else if (name2 == '' && name1 != '') {
-            window.alert('dont try to fool me....enter your partner name');
-        }
-        else {
-            document.getElementById('result').value = lovedata + '%';
-            console.log('worked');
-            // document.getElementById('name1').value = '';
-            // document.getElementById('name2').value = '';
-            document.contact - form.reset();
-        }
-    }
-    function cleardata() {
-        document.getElementById('name1').value = '';
-        document.getElementById('name2').value = '';
-        document.getElementById('result').value = '';
-        console.log('hai');
-    }
+ 
 </script>
+<script src="calcscript.js"></script>
+</body>
 
 </html>
